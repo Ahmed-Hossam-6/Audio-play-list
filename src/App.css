@@ -32,7 +32,107 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.searchword {
+  font-weight: bolder;
+  position: relative;
+  float: left;
+  padding-right: 30%;
+  padding-left: 5%;
+  padding-top: 1%;
+  padding-bottom: 7px;
+  color: black;
+
+}
+
+.Searchinput {
+  position: relative;
+  width: 90%;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: whitesmoke;
+}
+
+audio {
+  width: 90%;
+  background-color: gray;
+  color: gray;
+  border: solid black;
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel,
+audio {
+  background-color: gray;
+  color: gray;
+  -webkit-margin: border radius 0px;
+  -moz-margin: border radius 0px;
+  -ms-margin: border radius 0px;
+  -o-margin: border radius 0px;
+  margin: border radius 0px;
+}
+
+.tracklist {
+  margin: auto;
+  width: 90%;
+  position: relative;
+  color: rgba(76, 76, 230, 0.836);
+  height: 60px;
+  border: solid 1px gray;
+  font-weight: bolder;
+}
+
+.tracklist:hover {
+  background-color: rgba(76, 76, 230, 0.836);
+  color: white;
+}
+
+.close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.close:hover {
+  font-size: 12px;
+  border: solid white .2px;
+}
+
+.viewtrack {
+  width: 100%;
+  position: relative;
+  text-align: left;
+  margin-left: 10px;
+
+}
+
+.tracklength {
+  float: left;
+  position: relative;
+  color: black;
+  margin-left: 10px;
+
+
+}
+
+.addbutton {
+  height: 60px;
+  width: 270px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  background-color: rgba(76, 76, 230, 0.836);
+  color: white;
+  border-radius: 10px;
+  font-size: larger;
 }

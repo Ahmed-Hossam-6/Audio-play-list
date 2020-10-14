@@ -1,0 +1,31 @@
+input {
+    padding: 3px;
+    margin: auto;
+
+    position: relative;
+    width: 200px;
+
+}
+
+label {
+    padding: 3px;
+    color: white;
+}
+
+.form {
+    height: 350px;
+    width: 100%;
+    background-color: rgb(30,
+            30,
+            179);
+    display: grid;
+    position: fixed;
+    z-index: 2;
+    margin-block-end: 5%;
+}
+
+button {
+    width: 50px;
+    margin: auto;
+    margin-top: 20px;
+}

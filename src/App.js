@@ -1,7 +1,9 @@
-import React, { Component } from "react";
-import axios from "axios";
 import "./App.css";
+
+import React, { Component } from "react";
+
 import Addform from "./component/Addform";
+import axios from "axios";
 
 class App extends Component {
   state = {
@@ -12,7 +14,7 @@ class App extends Component {
     addflag: false,
     data: null,
     currenturl: null,
-    searchword: null,
+    searchword: "",
     searchdata: null,
   };
   componentDidMount() {
@@ -70,15 +72,12 @@ class App extends Component {
     var NewData = [null];
     if (this.state.data) {
       this.state.data.forEach((element) => {
-        if (element.artist === this.state.searchword) {
+        if (element.artist.toLowerCase() === this.state.searchword.toLowerCase()) {
           NewData.push(
             <div
               className="tracklist"
               key={element.url + element.length + element.name}
-            >
-              <div
-                className="viewtrack"
-                onClick={() => {
+              onClick={() => {
                   setTimeout(() => {
                     this.setState({ ...this.state, currenturl: null });
                   }, 0);
@@ -90,6 +89,10 @@ class App extends Component {
                     });
                   }, 0);
                 }}
+            >
+              <div
+                className="viewtrack"
+               
               ></div>
               <div className="viewtrack">
                 {element.name}
@@ -115,7 +118,7 @@ class App extends Component {
                 <div>
                   <input
                     type="text"
-                    placeholder="   search by track name..."
+                    placeholder="   search by artist..."
                     onChange={this.SearchChangeHandler}
                     id="Search"
                     className="Searchinput"

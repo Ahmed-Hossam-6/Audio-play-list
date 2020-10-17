@@ -26,7 +26,7 @@ class Addform extends Component {
         <button onClick={this.props.onClick} className="add">
           ADD
         </button>
-        <button onClick={this.props.onClickclose} className="close">
+        <button onClick={this.props.onClickclose} className="closeaddform">
           CLOSE
         </button>
       </div>

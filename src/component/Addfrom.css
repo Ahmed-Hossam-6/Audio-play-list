@@ -24,10 +24,20 @@ label {
     margin-block-end: 5%;
 }
 
-button,
-.add,
-.close {
+button {
     width: 50px;
     margin: auto;
     margin-top: 20px;
+    border-radius: 5px;
+}
+
+.closeaddform,
+.add {
+    width: 60px;
+}
+
+.closeaddform:active,
+.add:active {
+    color: white;
+    background-color: blue;
 }

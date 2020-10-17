@@ -72,28 +72,27 @@ class App extends Component {
     var NewData = [null];
     if (this.state.data) {
       this.state.data.forEach((element) => {
-        if (element.artist.toLowerCase() === this.state.searchword.toLowerCase()) {
+        if (
+          element.artist.toLowerCase() === this.state.searchword.toLowerCase()
+        ) {
           NewData.push(
             <div
               className="tracklist"
               key={element.url + element.length + element.name}
               onClick={() => {
-                  setTimeout(() => {
-                    this.setState({ ...this.state, currenturl: null });
-                  }, 0);
+                setTimeout(() => {
+                  this.setState({ ...this.state, currenturl: null });
+                }, 0);
 
-                  setTimeout(() => {
-                    this.setState({
-                      ...this.state,
-                      currenturl: element.url,
-                    });
-                  }, 0);
-                }}
+                setTimeout(() => {
+                  this.setState({
+                    ...this.state,
+                    currenturl: element.url,
+                  });
+                }, 0);
+              }}
             >
-              <div
-                className="viewtrack"
-               
-              ></div>
+              <div className="viewtrack"></div>
               <div className="viewtrack">
                 {element.name}
                 {"-"}

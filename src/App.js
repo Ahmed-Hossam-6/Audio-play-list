@@ -150,6 +150,7 @@ class App extends Component {
                       })
                     }
                     onClick={() => this.AddHandler()}
+                    onClickclose={this.ToggelHandler}
                   />
                 </div>
               ) : null}

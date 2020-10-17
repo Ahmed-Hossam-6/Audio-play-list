@@ -24,7 +24,9 @@ label {
     margin-block-end: 5%;
 }
 
-button {
+button,
+.add,
+.close {
     width: 50px;
     margin: auto;
     margin-top: 20px;

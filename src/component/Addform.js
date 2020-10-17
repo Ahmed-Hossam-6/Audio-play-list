@@ -23,7 +23,12 @@ class Addform extends Component {
 
         <label htmlFor="track path">Track path:</label>
         <input type="text" id="track path" onChange={this.props.onChangepath} />
-        <button onClick={this.props.onClick}>ADD</button>
+        <button onClick={this.props.onClick} className="add">
+          ADD
+        </button>
+        <button onClick={this.props.onClickclose} className="close">
+          CLOSE
+        </button>
       </div>
     );
   }
